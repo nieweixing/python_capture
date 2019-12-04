@@ -84,7 +84,7 @@ class Common(object):
         print('write_csv success')
 
     def queryData(self, sql):
-        db = pymysql.connect("localhost", "zww", "960128", "test")
+        db = pymysql.connect("192.168.30.30" "root", "123456", "nwxdb")
         cursor = db.cursor()
         results = []
         try:
@@ -101,7 +101,7 @@ class Common(object):
 
     def insertData(self, sql):
         # 打开数据库连接
-        db = pymysql.connect("localhost", "zww", "960128", "test")
+        db = pymysql.connect("192.168.30.30" "root", "123456", "nwxdb")
         # 使用 cursor() 方法创建一个游标对象 cursor
         cursor = db.cursor()
         print(sql)
@@ -121,7 +121,7 @@ class Common(object):
 
     def patchInsertData(self, sql, datas):
         # 打开数据库连接
-        db = pymysql.connect("localhost", "zww", "960128", "test")
+        db = pymysql.connect("192.168.30.30" "root", "123456", "nwxdb")
         # 使用 cursor() 方法创建一个游标对象 cursor
         cursor = db.cursor()
 
